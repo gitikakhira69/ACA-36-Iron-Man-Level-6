@@ -92,7 +92,7 @@ if(status==="play"){
     var temp = spikesGroup.get(i);
     if(temp.isTouching(iron)){
       diamondScore = diamondScore - 5;
-      iron.velocityX = -5;
+      temp.destroy();
     }
   }
   //a bug
